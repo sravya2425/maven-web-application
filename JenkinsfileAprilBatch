@@ -62,7 +62,7 @@ sendSlackNotifications(currentBuild.result)
 
 //Belode code will use for send slack build notifications
 
-/*
+
 def sendSlackNotifications(String buildStatus = 'STARTED') {
   
   buildStatus =  buildStatus ?: 'SUCCESS'
@@ -88,6 +88,6 @@ def sendSlackNotifications(String buildStatus = 'STARTED') {
   // Send notifications
   slackSend (color: colorCode, message: summary, channel: 'walmart')
 }
-*/
+
 
 
