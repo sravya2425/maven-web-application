@@ -43,7 +43,7 @@ stage('build')
 {
 sh "${mavenHome}/bin/mvn clean package"
 }
-
+/*
 stage('ExecuteSonarQubeReport')
 {
 sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -61,7 +61,7 @@ sshagent(['f8a2d652-9938-42e2-9493-ea72cc08ee94']) {
 }
 
 }
-
+*/
 }catch(e){
  currentBuild.result ="FAILED"
      throw e 
