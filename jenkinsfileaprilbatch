@@ -37,7 +37,7 @@ sshagent(['f8a2d652-9938-42e2-9493-ea72cc08ee94']) {
 }
 
 }
-*/
+
 }catch(e){
  currentBuild.result ="FAILED"
      throw e 
@@ -72,4 +72,4 @@ def notifyBuild(String buildStatus = 'STARTED') {
   // Send notifications
   slackSend (color: colorCode, message: summary)
 } 
-*/
+
