@@ -24,10 +24,6 @@ def notifyBuild(String buildStatus = 'STARTED') {
   slackSend (color: colorCode, message: summary)
 }
 
-
-
-
-
 node{
     
 def mavenHome = tool 'maven3.8.5'
